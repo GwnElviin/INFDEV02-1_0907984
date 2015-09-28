@@ -16,11 +16,9 @@ def rXp(n):
         print "PLAYER %s WINS! PAPER beats ROCK.\n" %(n)
 
 def rXs(n):
-    if n == 1:
         print "PLAYER %s WINS! ROCK beats SCISSORS.\n" %(n)
 
 def sXp(n):
-    if n == 1:
         print "PLAYER %s WINS! SCISSORS beats PAPER.\n" %(n)
 
 def same():
