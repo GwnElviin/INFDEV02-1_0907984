@@ -14,34 +14,24 @@ def checkInput(q):
 #Functions with different outcomes
 def rXp(n):
     print "PLAYER %s WINS! PAPER beats ROCK.\n" %(n)
-
 def rXs(n):
     print "PLAYER %s WINS! ROCK beats SCISSORS.\n" %(n)
-
 def rXsp(n):
     print "PLAYER %s WINS! SPOCK vapourises ROCK.\n" %(n)
-
 def rXl(n):
     print "PLAYER %s WINS! ROCK crushes LIZARD.\n" %(n)
-
 def pXsp(n):
     print "PLAYER %s WINS! PAPER disproves SPOCK.\n" %(n)
-
 def pXl(n):
     print "PLAYER %s WINS! LIZARD eats PAPER.\n" %(n)
-
 def sXsp(n):
     print "PLAYER %s WINS! SPOCK smashes SCISSORS.\n" %(n)
-
 def sXl(n):
     print "PLAYER %s WINS! SCISSORS decapitates LIZARD.\n" %(n)
-
 def spXl(n):
     print "PLAYER %s WINS! LIZARD poisons SPOCK.\n" %(n)
-
 def sXp(n):
     print "PLAYER %s WINS! SCISSORS beats PAPER.\n" %(n)
-
 def same():
     print "DRAW! no one wins\n"
 
