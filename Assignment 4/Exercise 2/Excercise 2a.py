@@ -13,22 +13,15 @@ def checkInput(q):
 
 #Functions different outcomes
 def rXp(n):
-    if n == 1:
-        print "PLAYER 1 WINS! PAPER beats ROCK.\n"
-    elif n == 2:
-        print "PLAYER 2 WINS! PAPER beats ROCK.\n"
+        print "PLAYER %s WINS! PAPER beats ROCK.\n" %(n)
 
 def rXs(n):
     if n == 1:
-        print "PLAYER 1 WINS! ROCK beats SCISSORS.\n"
-    elif n == 2:
-        print "PLAYER 2 WINS! ROCK beats SCISSORS.\n"
+        print "PLAYER %s WINS! ROCK beats SCISSORS.\n" %(n)
 
 def sXp(n):
     if n == 1:
-        print "PLAYER 1 WINS! SCISSORS beats PAPER.\n"
-    elif n == 2:
-        print "PLAYER 2 WINS! SCISSORS beats PAPER.\n"
+        print "PLAYER %s WINS! SCISSORS beats PAPER.\n" %(n)
 
 def same():
     print "DRAW! no one wins\n"
@@ -44,10 +37,12 @@ else:
         p2 = raw_input("PLAYER 2: rock, paper or scissors : \n")
     else:
         print 'PLAYER 1 used %s and PLAYER 2 used %s' %(p1.upper(),p2.upper())
+
         if p1 == p2:
             p1 = 'same'
             p2 = ''
-        combo = p1+p2
+
+        combo = p1 + p2
 
         if combo == 'rockpaper':
             rXp(2)
