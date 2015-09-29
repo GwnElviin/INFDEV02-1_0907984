@@ -12,26 +12,8 @@ def checkInput(q):
     return n
 
 #Functions with different outcomes
-def rXp(n):
-    print "PLAYER %s WINS! PAPER beats ROCK.\n" %(n)
-def rXs(n):
-    print "PLAYER %s WINS! ROCK beats SCISSORS.\n" %(n)
-def rXsp(n):
-    print "PLAYER %s WINS! SPOCK vapourises ROCK.\n" %(n)
-def rXl(n):
-    print "PLAYER %s WINS! ROCK crushes LIZARD.\n" %(n)
-def pXsp(n):
-    print "PLAYER %s WINS! PAPER disproves SPOCK.\n" %(n)
-def pXl(n):
-    print "PLAYER %s WINS! LIZARD eats PAPER.\n" %(n)
-def sXsp(n):
-    print "PLAYER %s WINS! SPOCK smashes SCISSORS.\n" %(n)
-def sXl(n):
-    print "PLAYER %s WINS! SCISSORS decapitates LIZARD.\n" %(n)
-def spXl(n):
-    print "PLAYER %s WINS! LIZARD poisons SPOCK.\n" %(n)
-def sXp(n):
-    print "PLAYER %s WINS! SCISSORS beats PAPER.\n" %(n)
+def outcome(n,i1,i2):
+    print "PLAYER %s WINS! %s beats %s.\n" %(n, p1.upper(), p2.upper())
 def same():
     print "DRAW! no one wins\n"
 
@@ -55,44 +37,44 @@ else:
 
 #User input decides what function u will use
         if combo == 'rockpaper':
-            rXp(2)
+            outcome(2,'paper','rock')
         elif combo == 'rockscissors':
-            rXs(1)
+            outcome(1,'rock','scissors')
         elif combo == 'paperrock':
-            rXp(1)
+            outcome(1,'paper','rock')
         elif combo == 'paperscissors':
-            sXp(2)
+            outcome(2,'scissors','paper')
         elif combo == 'scissorsrock':
-            rXs(2)
+            outcome(2,'rock','scissors')
         elif combo == 'scissorspaper':
-            sXp(1)
+            outcome(1,'scissors','paper')
         elif combo == 'rockspock':
-            rXsp(2)
+            outcome(2,'spock','rock')
         elif combo == 'spockrock':
-            rXsp(1)
+            outcome(1,'spock','rock')
         elif combo == 'rocklizard':
-            rXl(1)
+            outcome(1,'rock','lizard')
         elif combo == 'lizardrock':
-            rXl(2)
+            outcome(2,'rock','lizard')
         elif combo == 'paperspock':
-            pXsp(1)
+            outcome(1,'paper','spock')
         elif combo == 'spockpaper':
-            pXsp(2)
+            outcome(2,'paper','spock')
         elif combo == 'scissorslizard':
-            sXl(1)
+            outcome(1,'scissors','lizard')
         elif combo == 'lizardscissors':
-            sXl(2)
+            outcome(2,'scissors','lizard')
         elif combo == 'scissorsspock':
-            sXsp(2)
+            outcome(2,'spock','scissors')
         elif combo == 'spockscissors':
-            sXsp(1)
+            outcome(1,'spock','scissors')
         elif combo == 'paperlizard':
-            pXl(2)
+            outcome(2,'lizard','paper')
         elif combo == 'lizardpaper':
-            pXl(1)
+            outcome(1,'lizard','paper')
         elif combo == 'spocklizard':
-            spXl(2)
+            outcome(2,'lizard','spock')
         elif combo == 'lizardspock':
-            spXl(1)
+            outcome(1,'lizard','spock')
         elif combo == 'same':
             same()
