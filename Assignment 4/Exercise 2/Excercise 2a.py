@@ -12,8 +12,8 @@ def checkInput(q):
     return n
 
 #Functions different outcomes
-def outcome(n,i1,i2):
-    print "PLAYER %s WINS! %s beats %s.\n" %(n, p1.upper(), p2.upper())
+def outcome(n,i1,m,i2):
+    print "PLAYER %s WINS! %s %s %s.\n" %(n, i1.upper(),m.upper(), i2.upper())
 def same():
     print "DRAW! no one wins\n"
 
@@ -36,16 +36,16 @@ else:
         combo = p1 + p2
 
         if combo == 'rockpaper':
-            outcome(2,'paper','rock')
+            outcome(2,'paper','covers','rock')
         elif combo == 'rockscissors':
-            outcome(1,'rock','scissors')
+            outcome(1,'rock','crushes','scissors')
         elif combo == 'paperrock':
-            outcome(1,'paper','rock')
+            outcome(1,'paper','covers','rock')
         elif combo == 'paperscissors':
-            outcome(2,'scissors','paper')
+            outcome(2,'scissors','cuts','paper')
         elif combo == 'scissorsrock':
-            outcome(2,'rock','scissors')
+            outcome(2,'rock','crushes','scissors')
         elif combo == 'scissorspaper':
-            outcome(1,'scissors','paper')
+            outcome(1,'scissors','cuts','paper')
         elif combo == 'same':
             same()
