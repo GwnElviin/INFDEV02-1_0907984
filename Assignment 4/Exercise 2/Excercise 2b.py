@@ -35,7 +35,7 @@ else:
 
         combo = p1 + p2
 
-#User input decides what function u will use
+#User input decides what function u will use and what parameters you send
         if combo == 'rockpaper':
             outcome(2,'paper','covers','rock')
         elif combo == 'rockscissors':
