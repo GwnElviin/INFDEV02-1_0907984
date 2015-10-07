@@ -1,5 +1,4 @@
 __author__ = 'Elvin Carvalho, 0907984 INFB1, RPCSL'
-
 #Function checks if input given is right
 def checkInput(q):
     #list with correct input
