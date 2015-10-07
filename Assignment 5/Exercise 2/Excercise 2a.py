@@ -1,4 +1,4 @@
-__author__ = 'Elvin Carvalho, 0907984 INFB1'
+__author__ = 'Elvin Carvalho, 0907984 INFB1, Password'
 
 # print len([c for c in p1 if c.isupper()])     #checks upper case characters
 # print len([c for c in p1 if c.islower()])     #checks lower case characters
