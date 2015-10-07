@@ -2,8 +2,13 @@ __author__ = 'Elvin Carvalho, 0907984 INFB1'
 
 #Function to get Celsius from Fahrenheit input
 def FtoC():
-    q1 = input('Fahrenheit to Celsius: ')
+    #input for the first question
+    q1 = input('Fahrenheit to Celsius: \n')
+
+    #Formula for fahrenheit to celsius
     formula = (q1 - 32) / 1.80
+
+    #Celsius Result change to float with 2 zeros
     celsius = format(formula, '.2f')
     print('%s degrees Fahrenheit is %s degrees Celsius' % (q1, celsius))
 
