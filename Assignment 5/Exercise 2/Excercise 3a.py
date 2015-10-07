@@ -1,4 +1,4 @@
-__author__ = 'Elvin Carvalho, 0907984 INFB1'
+__author__ = 'Elvin Carvalho, 0907984 INFB1, Crypthography'
 
 #function that checks if a letter(item)is lower/uppercase
 def shiftIt(x,y):
@@ -37,8 +37,10 @@ while True:
     resultL = []
     for item in lq1:
 
+        #every item in list (every letter of input) do ord function ,change it to a ascii
         ascii = ord(item)
         #print '%s = %s' %(item,ascii)
+        #ascii add amount to ascii and create new ascii
         new_ascii = ascii + n
         shiftIt(item,new_ascii)
 
