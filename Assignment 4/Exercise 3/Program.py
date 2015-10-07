@@ -38,18 +38,22 @@ def Program():
     #get ascii of key
     x =get()
     print (x)
+
     #if ascii = w move forward 5 steps
     if x == 119:
       forward(5)
+
     #if ascii = a rotate -90 degrees  
     elif x == 97:
       turn(-90)
-      change_color_to ('blue') 
+      change_color_to ('blue')
+
     #if ascii = d rotate 90 degrees  
     elif x == 100:
       turn(90) 
       change_color_to ('purple')
 
+    #do a 360
     elif x == 115:
       turn(360)
 

@@ -1,4 +1,4 @@
-__author__ = 'Elvin Carvalho, 0907984 INFB1'
+__author__ = 'Elvin Carvalho, 0907984 INFB1 Fahrenheit to Celsius'
 
 #Function to get Celsius from Fahrenheit input
 def FtoC():

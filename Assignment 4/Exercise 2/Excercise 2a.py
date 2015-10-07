@@ -1,4 +1,4 @@
-__author__ = 'Elvin Carvalho, 0907984 INFB1'
+__author__ = 'Elvin Carvalho, 0907984 INFB1 RPS'
 
 #Function check if input given is right
 def checkInput(q):
