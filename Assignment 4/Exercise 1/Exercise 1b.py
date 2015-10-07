@@ -4,7 +4,7 @@ __author__ = 'Elvin Carvalho, 0907984 INFB1'
 def CtoK():
     q1 = input('Celsius to Kelvin: ')
 
-    #check abolute zero point
+    #check if input abolute zero point
     if q1 < -273.15:
         print("Cant go lower (minimum -273.15)")
         CtoK()
