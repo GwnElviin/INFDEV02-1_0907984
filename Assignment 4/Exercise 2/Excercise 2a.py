@@ -13,7 +13,7 @@ def checkInput(q):
         n = 'true'
     return n
 
-#Functions different outcomes
+#Functions with different outcomes(player that wins, winning item, correct way to say how it beats something, losing item)
 def outcome(n,i1,m,i2):
     print "PLAYER %s WINS! %s %s %s.\n" %(n, i1.upper(),m.upper(), i2.upper())
 def same():
