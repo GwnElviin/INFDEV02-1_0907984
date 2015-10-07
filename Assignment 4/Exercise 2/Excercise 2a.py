@@ -2,8 +2,10 @@ __author__ = 'Elvin Carvalho, 0907984 INFB1'
 
 #Function check if input given is right
 def checkInput(q):
+    #list with correct input
     inputCorrect = ['rock', 'paper', 'scissors']
 
+    #if input doesnt match with any item in list
     if not q in inputCorrect:
         print('No input/Wrong input given0\n\n')
         n = 'false'
@@ -29,12 +31,14 @@ else:
     else:
         print 'PLAYER 1 used %s and PLAYER 2 used %s' %(p1.upper(),p2.upper())
 
+        #if input of p1,p2 is same
         if p1 == p2:
             p1 = 'same'
             p2 = ''
 
         combo = p1 + p2
 
+        #for every different outcom send different parameters to function outcome
         if combo == 'rockpaper':
             outcome(2,'paper','covers','rock')
         elif combo == 'rockscissors':
