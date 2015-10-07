@@ -2,8 +2,10 @@ __author__ = 'Elvin Carvalho, 0907984 INFB1'
 
 #Function checks if input given is right
 def checkInput(q):
+    #list with correct input
     inputCorrect = ['rock', 'paper', 'scissors', 'lizard', 'spock']
 
+    #if input doesnt match with any item in list
     if not q in inputCorrect:
         print('No input/Wrong input given0\n\n')
         n = 'false'
@@ -11,7 +13,7 @@ def checkInput(q):
         n = 'true'
     return n
 
-#Functions with different outcomes
+#Functions with different outcomes(player that wins, winning item, correct way to say how it beats something, losing item)
 def outcome(n,i1,m,i2):
     print "PLAYER %s WINS! %s %s %s.\n" %(n, i1.upper(),m.upper(), i2.upper())
 def same():
@@ -20,10 +22,13 @@ def same():
 #Player 1&2 input
 p1 = raw_input("PLAYER 1: rock, paper, scissors, spock or lizard : \n")
 
+#if the function returns false
 while checkInput(p1) == 'false':
     p1 = raw_input("PLAYER 1: rock, paper, scissors, spock or lizard : \n")
 else:
     p2 = raw_input("PLAYER 2: rock, paper, scissors, spock or lizard : \n")
+
+    #if the function returns false
     while checkInput(p2) == 'false':
         p2 = raw_input("PLAYER 2: rock, paper, scissors, spock or lizard : \n")
     else:
